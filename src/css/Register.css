@@ -1,0 +1,44 @@
+#main-register {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5A1CD4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#register-container {
+  height: 500px;
+}
+
+#register-container form {
+  height: 660px;
+  width: 450px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#register-container input {
+  width: 300px;
+  margin: 6px 0;
+  border: 0.5px solid grey;
+  border-radius: 6px;
+}
+
+#login-submit {
+  width: 70%;
+  border-radius: 6px;
+  background-color: #5A1CD4;
+  height: 40px;
+}
+
+span {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+span:hover {
+  cursor: pointer;
+}

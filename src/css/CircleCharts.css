@@ -1,0 +1,30 @@
+#circle-charts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    width: 30%;
+    margin: 0;
+    border-left: 1px solid grey;
+    justify-content: space-evenly;
+}
+
+.circle-chart-container h1 {
+    margin: 10px 0;
+}
+
+.circle-chart-container {
+    /* width: 100px;
+    background-color: blue; */
+    margin-bottom: 300px;
+}
+
+@media screen and (max-width: 800px) {
+    #circle-charts-container {
+        width: 100%;
+        border: none;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+}

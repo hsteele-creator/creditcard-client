@@ -1,0 +1,74 @@
+
+
+.instructions {
+    color: white;
+    margin: 30px 0 0 30px;
+    font-size: 16px;
+}
+
+#transactions-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.card {
+  position: relative;
+  margin: 20px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.chip {
+  width: 30px;
+}
+
+.number {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+.type {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+}
+
+.chip {
+  position: absolute;
+  top: 45%;
+  left: 8%;
+}
+
+.holder {
+  position: absolute;
+  top: 60%;
+  left: 8%;
+}
+
+#transactions-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.active-card {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  );
+  height: 170px;
+  width: 300px;
+}
+
+#transactions-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}

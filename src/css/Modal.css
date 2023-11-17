@@ -1,0 +1,84 @@
+#modal-container {
+    height: 480px;
+    width: 580px;
+    padding: 50px;
+    z-index: 1;
+    /* background-color: #f1f4ff;
+    background-color: #113f67; */
+    background-color: white;
+    color: #113f67;
+    color: #5A1CD4;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 6px;
+}
+
+#modal-container h3 {
+    font-size: 20px;
+}
+
+#modal-container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#modal-container-form input {
+    width: 63%;
+    margin: 6px auto;
+    border: none;
+    background: none;
+    border: 0.5px solid grey;
+    border-radius: 6px;
+    /* border-bottom: 0.5px solid grey; */
+}
+
+
+/* #modal-container-form input::placeholder {
+    color: white;
+} */
+
+#close-modal-btn {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+#close-modal-btn img {
+    width: 25px;
+    position: absolute;
+    top: 5%;
+    right: 6%;
+}
+
+.submit-modal-btn {
+    background-color: #113f67;
+    background-color: #5A1CD4;
+    border: 1px solid white;
+    width: 50%;
+    height: 40px;
+}
+
+.submit-modal-btn:hover {
+    background-color: white;
+    border: 1px solid #113f67;
+    color: #113f67;
+}
+
+#selects-container {
+    display: flex;
+    margin: 30px 0;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+    #modal-container {
+        width: 80%;
+        text-align: center;
+    }
+    #modal-container input{
+        width: 70%;
+    }
+}

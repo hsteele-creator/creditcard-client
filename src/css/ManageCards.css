@@ -1,0 +1,130 @@
+#manage-cards-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.manage-warning {
+    height: 250px;
+    width: 300px;
+    padding: 50px;
+    background-color: #5A1CD4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+
+}
+
+.delete-btn {
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    color: navy;
+    font-weight: bold;
+    width: 50px;
+    height: 30px;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+}
+
+#btn-container {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#edit-card-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#edit-card-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#edit-card-form input {
+    width: 300px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 0.5px solid grey;
+}
+.edit-form-btn {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border-radius: 50%;
+    background-color: #5A1CD4;
+    border: 1px solid #5A1CD4;;
+    color: white;
+}
+
+.edit-form-btn:hover {
+    cursor: pointer;
+}
+
+#edit-card-btn {
+    background-color: #5A1CD4;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+    margin: 5px auto;
+}
+
+#edit-card-btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .manage-warning {
+        width: 200px;
+    }
+
+    #edit-card-form {
+        width: 90%;
+    }
+
+    #edit-card-form form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #edit-card-form form input {
+        width: 80%;
+        margin: 4px auto;
+    }
+
+    #edit-card-btn {
+        width: 90%;
+    }
+
+    .edit-form-btn {
+        top: 7%;
+        right: 5%;
+    }
+}

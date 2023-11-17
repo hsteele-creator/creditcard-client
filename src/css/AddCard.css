@@ -1,0 +1,86 @@
+#add-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  padding: 50px;
+  background-color: #f1f4ff;
+}
+
+#add-card-container h1 {
+  margin: 0 0 10px 0;
+}
+
+#add-card-container input {
+  width: 300px;
+  margin: 6px 0;
+  border-radius: 2px;
+  border: none;
+  padding: 18px 20px;
+}
+
+#card-holder-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.front {
+  margin-right: 10px;
+  position: relative;
+}
+
+.back {
+    margin-left: 10px;
+    position: relative;
+}
+
+.chip-img {
+    width: 35px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.card-number {
+    position: absolute;
+    top: 42%;
+    left: 9%;
+}
+
+.card-type {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+
+.card-exp {
+    position: absolute;
+    top: 68%;
+    left: 9%;
+    font-size: 10px;
+}
+
+.card-holder {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
+.card-cvv {
+    position: absolute;
+    top: 55%;
+    right: 10%
+}
+
+@media screen and (max-width: 800px) {
+  #card-holder-container {
+    flex-direction: column;
+  }
+
+  #add-card-container input {
+    width: 100%;
+  }
+}
