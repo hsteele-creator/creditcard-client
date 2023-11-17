@@ -1,6 +1,6 @@
 import "../css/CircleCharts.css";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+// import "react-circular-progressbar/dist/styles.css";
 
 const CircleCharts = ({income, savings}) => {
   return (

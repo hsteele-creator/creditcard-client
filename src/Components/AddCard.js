@@ -30,6 +30,9 @@ const AddCard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // https://creditcard-backend-83b305c9c8ed.herokuapp.com
+
+
     const response = await fetch("http://localhost:8000/cards/add-card", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
