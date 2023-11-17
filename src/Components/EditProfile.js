@@ -12,7 +12,7 @@ const EditProfile = () => {
   const getUserData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/auth/user-data/${cookies.Username}`
+        `https://creditcard-backend-83b305c9c8ed.herokuapp.com/auth/user-data/${cookies.Username}`
       );
       const json = await response.json();
       setUserData(json);
@@ -40,7 +40,7 @@ const EditProfile = () => {
     e.preventDefault();
 
     const response = await fetch(
-      `http://localhost:8000/auth/update-user/${cookies.ID}`,
+      `https://creditcard-backend-83b305c9c8ed.herokuapp.com/auth/update-user/${cookies.ID}`,
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },

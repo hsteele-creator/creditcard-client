@@ -15,7 +15,7 @@ const ManageCards = () => {
 
   const getCards = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/cards/${cookies.ID}`);
+      const response = await fetch(`https://creditcard-backend-83b305c9c8ed.herokuapp.com/cards/${cookies.ID}`);
       const json = await response.json();
       setCards(json);
     } catch (e) {
@@ -50,7 +50,7 @@ const ManageCards = () => {
 
     console.log('clicked')
 
-    const response = await fetch("http://localhost:8000/cards/update-card", {
+    const response = await fetch("https://creditcard-backend-83b305c9c8ed.herokuapp.com/cards/update-card", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(activeCard),
@@ -63,7 +63,7 @@ const ManageCards = () => {
   }
 
   const handleDelete = async() => {
-    const response = await fetch(`http://localhost:8000/cards/delete-card/${activeCard.id}`, {
+    const response = await fetch(`https://creditcard-backend-83b305c9c8ed.herokuapp.com/cards/delete-card/${activeCard.id}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       }); 

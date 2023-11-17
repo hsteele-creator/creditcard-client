@@ -33,7 +33,7 @@ const AddCard = () => {
     // https://creditcard-backend-83b305c9c8ed.herokuapp.com
 
 
-    const response = await fetch("http://localhost:8000/cards/add-card", {
+    const response = await fetch("https://creditcard-backend-83b305c9c8ed.herokuapp.com/cards/add-card", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(cardData),

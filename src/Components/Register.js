@@ -22,7 +22,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`http://localhost:8000/auth/${status}`, {
+    const response = await fetch(`https://creditcard-backend-83b305c9c8ed.herokuapp.com/auth/${status}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

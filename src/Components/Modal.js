@@ -49,7 +49,7 @@ const Modal = ({ setShowModal, creditCards, getTransactions }) => {
     if (transaction.card_number !== "") {
       try {
         const response = await fetch(
-          `http://localhost:8000/transactions/add-transaction`,
+          `https://creditcard-backend-83b305c9c8ed.herokuapp.com/transactions/add-transaction`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
