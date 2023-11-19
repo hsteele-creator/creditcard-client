@@ -14,7 +14,7 @@ const Main = () => {
   const [cookies, setCookie, removeCookie] = useCookies(null);
   const getCards = async () => {
     try {
-      const response = await fetch(`hhttps://creditcard-backend-83b305c9c8ed.herokuapp.com/cards/${cookies.ID}`);
+      const response = await fetch(`https://creditcard-backend-83b305c9c8ed.herokuapp.com/cards/${cookies.ID}`);
       const json = await response.json();
       console.log(cookies.ID);
       setCards(json);
